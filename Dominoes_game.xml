@@ -1,151 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <game xml_version="1.50">
-<sides paths="Dominoes_board.png">
-<board>Main board</board>
-</sides>
-<sides paths="Dominoes_sideboard.png">
-<board edge="3" position="4.5">offset board</board>
-</sides>
-<sides paths="Dominoes_sideboard.png">
-<board edge="0" position="1.05">Player 1</board>
-</sides>
-<sides paths="Dominoes_sideboard.png">
-<board edge="3" position="4.5">offset board2</board>
-</sides>
-<sides paths="Dominoes_sideboard.png">
-<board edge="0" position="0.2">Player 2</board>
-</sides>
-
-<location_in_action action="set_side" args="0">
-<location_type type="free">
-<size width="768" height="110">
-<corner_coord board="2" x="0" y="0">
-<location>Player1Stock</location>
-</corner_coord>
-<corner_coord board="4" x="0" y="0">
-<location>Player2Stock</location>
-</corner_coord>
-</size>
-</location_type>
-</location_in_action>
-
-<location_type type="free">
-<size width="1024" height="768">
-<corner_coord board="0" x="0" y="0">
-<location>MainCanvas</location>
-</corner_coord>
-</size>
-</location_type>
-<size width="100" height="50">
-<corner_coord board="0" x="462" y="20">
-<location_type type="stack">
-<location>draw</location>
-</location_type>
-<location_type type="cell">
-<location>drawbuffer</location>
-</location_type>
-</corner_coord>
-</size>
-
-
-<draggable value="0">
-<initial_location name="drawbuffer">
-<sides paths="Dominoes_0_0_s2.png">
-<piece>drawbufferpiece</piece>
-</sides>
-</initial_location>
-</draggable>
-<initial_location name="draw">
-<initial_side value="1">
-<single_tap action="increment_side" args="wrap">
-<quad_tap action="set_side" args="0">
-<double_tap action="random_side" args="v2">
-<sides paths="Dominoes_2_3_s1.png,Dominoes_2_3_s2.png,Dominoes_2_3_s3.png,Dominoes_2_3_s4.png">
-<piece count="1">2_3</piece>
-</sides>
-<sides paths="Dominoes_5_5_s1.png,Dominoes_5_5_s2.png,Dominoes_5_5_s3.png,Dominoes_5_5_s4.png">
-<piece count="1">5_5</piece>
-</sides>
-<sides paths="Dominoes_1_6_s1.png,Dominoes_1_6_s2.png,Dominoes_1_6_s3.png,Dominoes_1_6_s4.png">
-<piece count="1">1_6</piece>
-</sides>
-<sides paths="Dominoes_0_4_s1.png,Dominoes_0_4_s2.png,Dominoes_0_4_s3.png,Dominoes_0_4_s4.png">
-<piece count="1">0_4</piece>
-</sides>
-<sides paths="Dominoes_3_6_s1.png,Dominoes_3_6_s2.png,Dominoes_3_6_s3.png,Dominoes_3_6_s4.png">
-<piece count="1">3_6</piece>
-</sides>
-<sides paths="Dominoes_2_4_s1.png,Dominoes_2_4_s2.png,Dominoes_2_4_s3.png,Dominoes_2_4_s4.png">
-<piece count="1">2_4</piece>
-</sides>
-<sides paths="Dominoes_1_2_s1.png,Dominoes_1_2_s2.png,Dominoes_1_2_s3.png,Dominoes_1_2_s4.png">
-<piece count="1">1_2</piece>
-</sides>
-<sides paths="Dominoes_4_4_s1.png,Dominoes_4_4_s2.png,Dominoes_4_4_s3.png,Dominoes_4_4_s4.png">
-<piece count="1">4_4</piece>
-</sides>
-<sides paths="Dominoes_0_0_s1.png,Dominoes_0_0_s2.png,Dominoes_0_0_s3.png,Dominoes_0_0_s4.png">
-<piece count="1">0_0</piece>
-</sides>
-<sides paths="Dominoes_0_5_s1.png,Dominoes_0_5_s2.png,Dominoes_0_5_s3.png,Dominoes_0_5_s4.png">
-<piece count="1">0_5</piece>
-</sides>
-<sides paths="Dominoes_1_3_s1.png,Dominoes_1_3_s2.png,Dominoes_1_3_s3.png,Dominoes_1_3_s4.png">
-<piece count="1">1_3</piece>
-</sides>
-<sides paths="Dominoes_0_1_s1.png,Dominoes_0_1_s2.png,Dominoes_0_1_s3.png,Dominoes_0_1_s4.png">
-<piece count="1">0_1</piece>
-</sides>
-<sides paths="Dominoes_3_3_s1.png,Dominoes_3_3_s2.png,Dominoes_3_3_s3.png,Dominoes_3_3_s4.png">
-<piece count="1">3_3</piece>
-</sides>
-<sides paths="Dominoes_5_6_s1.png,Dominoes_5_6_s2.png,Dominoes_5_6_s3.png,Dominoes_5_6_s4.png">
-<piece count="1">5_6</piece>
-</sides>
-<sides paths="Dominoes_2_5_s1.png,Dominoes_2_5_s2.png,Dominoes_2_5_s3.png,Dominoes_2_5_s4.png">
-<piece count="1">2_5</piece>
-</sides>
-<sides paths="Dominoes_0_2_s1.png,Dominoes_0_2_s2.png,Dominoes_0_2_s3.png,Dominoes_0_2_s4.png">
-<piece count="1">0_2</piece>
-</sides>
-<sides paths="Dominoes_4_5_s1.png,Dominoes_4_5_s2.png,Dominoes_4_5_s3.png,Dominoes_4_5_s4.png">
-<piece count="1">4_5</piece>
-</sides>
-<sides paths="Dominoes_2_2_s1.png,Dominoes_2_2_s2.png,Dominoes_2_2_s3.png,Dominoes_2_2_s4.png">
-<piece count="1">2_2</piece>
-</sides>
-<sides paths="Dominoes_0_6_s1.png,Dominoes_0_6_s2.png,Dominoes_0_6_s3.png,Dominoes_0_6_s4.png">
-<piece count="1">0_6</piece>
-</sides>
-<sides paths="Dominoes_2_6_s1.png,Dominoes_2_6_s2.png,Dominoes_2_6_s3.png,Dominoes_2_6_s4.png">
-<piece count="1">2_6</piece>
-</sides>
-<sides paths="Dominoes_1_4_s1.png,Dominoes_1_4_s2.png,Dominoes_1_4_s3.png,Dominoes_1_4_s4.png">
-<piece count="1">1_4</piece>
-</sides>
-<sides paths="Dominoes_4_6_s1.png,Dominoes_4_6_s2.png,Dominoes_4_6_s3.png,Dominoes_4_6_s4.png">
-<piece count="1">4_6</piece>
-</sides>
-<sides paths="Dominoes_3_4_s1.png,Dominoes_3_4_s2.png,Dominoes_3_4_s3.png,Dominoes_3_4_s4.png">
-<piece count="1">3_4</piece>
-</sides>
-<sides paths="Dominoes_1_1_s1.png,Dominoes_1_1_s2.png,Dominoes_1_1_s3.png,Dominoes_1_1_s4.png">
-<piece count="1">1_1</piece>
-</sides>
-<sides paths="Dominoes_6_6_s1.png,Dominoes_6_6_s2.png,Dominoes_6_6_s3.png,Dominoes_6_6_s4.png">
-<piece count="1">6_6</piece>
-</sides>
-<sides paths="Dominoes_1_5_s1.png,Dominoes_1_5_s2.png,Dominoes_1_5_s3.png,Dominoes_1_5_s4.png">
-<piece count="1">1_5</piece>
-</sides>
-<sides paths="Dominoes_0_3_s1.png,Dominoes_0_3_s2.png,Dominoes_0_3_s3.png,Dominoes_0_3_s4.png">
-<piece count="1">0_3</piece>
-</sides>
-<sides paths="Dominoes_3_5_s1.png,Dominoes_3_5_s2.png,Dominoes_3_5_s3.png,Dominoes_3_5_s4.png">
-<piece count="1">3_5</piece>
-</sides>
-</double_tap>
-</quad_tap>
-</single_tap>
-</initial_side>
-</initial_location>
+  <sides paths="Dominoes_board.png">
+    <board>Main board</board>
+  </sides>
+  <sides paths="Dominoes_sideboard.png">
+    <board edge="3" position="4.5">offset board</board>
+  </sides>
+  <sides paths="Dominoes_sideboard.png">
+    <board edge="0" position="1.05">Player 1</board>
+  </sides>
+  <sides paths="Dominoes_sideboard.png">
+    <board edge="3" position="4.5">offset board2</board>
+  </sides>
+  <sides paths="Dominoes_sideboard.png">
+    <board edge="0" position="0.2">Player 2</board>
+  </sides>
+  <location_in_action action="set_side" args="0">
+    <location_type type="free">
+      <size width="768" height="110">
+        <corner_coord board="2" x="0" y="0">
+          <location>Player1Stock</location>
+        </corner_coord>
+        <corner_coord board="4" x="0" y="0">
+          <location>Player2Stock</location>
+        </corner_coord>
+      </size>
+    </location_type>
+  </location_in_action>
+  <location_type type="free">
+    <size width="1024" height="768">
+      <corner_coord board="0" x="0" y="0">
+        <location>MainCanvas</location>
+      </corner_coord>
+    </size>
+  </location_type>
+  <size width="100" height="50">
+    <corner_coord board="0" x="462" y="20">
+      <location_display type="count" offset_x="-100">
+        <location_type type="stack">
+          <location>draw</location>
+        </location_type>
+      </location_display>
+      <location_type type="cell">
+        <location>drawbuffer</location>
+      </location_type>
+    </corner_coord>
+  </size>
+  <draggable value="0">
+    <initial_location name="drawbuffer">
+      <sides paths="Dominoes_0_0_s2.png">
+        <piece>drawbufferpiece</piece>
+      </sides>
+    </initial_location>
+  </draggable>
+  <initial_location name="draw">
+    <initial_side value="1">
+      <single_tap action="increment_side" args="wrap">
+        <quad_tap action="shuffle_location" args="">
+          <double_tap action="random_side" args="v2">
+            <sides paths="Dominoes_2_3_s1.png,Dominoes_2_3_s2.png,Dominoes_2_3_s3.png,Dominoes_2_3_s4.png">
+              <piece count="1">2_3</piece>
+            </sides>
+            <sides paths="Dominoes_5_5_s1.png,Dominoes_5_5_s2.png,Dominoes_5_5_s3.png,Dominoes_5_5_s4.png">
+              <piece count="1">5_5</piece>
+            </sides>
+            <sides paths="Dominoes_1_6_s1.png,Dominoes_1_6_s2.png,Dominoes_1_6_s3.png,Dominoes_1_6_s4.png">
+              <piece count="1">1_6</piece>
+            </sides>
+            <sides paths="Dominoes_0_4_s1.png,Dominoes_0_4_s2.png,Dominoes_0_4_s3.png,Dominoes_0_4_s4.png">
+              <piece count="1">0_4</piece>
+            </sides>
+            <sides paths="Dominoes_3_6_s1.png,Dominoes_3_6_s2.png,Dominoes_3_6_s3.png,Dominoes_3_6_s4.png">
+              <piece count="1">3_6</piece>
+            </sides>
+            <sides paths="Dominoes_2_4_s1.png,Dominoes_2_4_s2.png,Dominoes_2_4_s3.png,Dominoes_2_4_s4.png">
+              <piece count="1">2_4</piece>
+            </sides>
+            <sides paths="Dominoes_1_2_s1.png,Dominoes_1_2_s2.png,Dominoes_1_2_s3.png,Dominoes_1_2_s4.png">
+              <piece count="1">1_2</piece>
+            </sides>
+            <sides paths="Dominoes_4_4_s1.png,Dominoes_4_4_s2.png,Dominoes_4_4_s3.png,Dominoes_4_4_s4.png">
+              <piece count="1">4_4</piece>
+            </sides>
+            <sides paths="Dominoes_0_0_s1.png,Dominoes_0_0_s2.png,Dominoes_0_0_s3.png,Dominoes_0_0_s4.png">
+              <piece count="1">0_0</piece>
+            </sides>
+            <sides paths="Dominoes_0_5_s1.png,Dominoes_0_5_s2.png,Dominoes_0_5_s3.png,Dominoes_0_5_s4.png">
+              <piece count="1">0_5</piece>
+            </sides>
+            <sides paths="Dominoes_1_3_s1.png,Dominoes_1_3_s2.png,Dominoes_1_3_s3.png,Dominoes_1_3_s4.png">
+              <piece count="1">1_3</piece>
+            </sides>
+            <sides paths="Dominoes_0_1_s1.png,Dominoes_0_1_s2.png,Dominoes_0_1_s3.png,Dominoes_0_1_s4.png">
+              <piece count="1">0_1</piece>
+            </sides>
+            <sides paths="Dominoes_3_3_s1.png,Dominoes_3_3_s2.png,Dominoes_3_3_s3.png,Dominoes_3_3_s4.png">
+              <piece count="1">3_3</piece>
+            </sides>
+            <sides paths="Dominoes_5_6_s1.png,Dominoes_5_6_s2.png,Dominoes_5_6_s3.png,Dominoes_5_6_s4.png">
+              <piece count="1">5_6</piece>
+            </sides>
+            <sides paths="Dominoes_2_5_s1.png,Dominoes_2_5_s2.png,Dominoes_2_5_s3.png,Dominoes_2_5_s4.png">
+              <piece count="1">2_5</piece>
+            </sides>
+            <sides paths="Dominoes_0_2_s1.png,Dominoes_0_2_s2.png,Dominoes_0_2_s3.png,Dominoes_0_2_s4.png">
+              <piece count="1">0_2</piece>
+            </sides>
+            <sides paths="Dominoes_4_5_s1.png,Dominoes_4_5_s2.png,Dominoes_4_5_s3.png,Dominoes_4_5_s4.png">
+              <piece count="1">4_5</piece>
+            </sides>
+            <sides paths="Dominoes_2_2_s1.png,Dominoes_2_2_s2.png,Dominoes_2_2_s3.png,Dominoes_2_2_s4.png">
+              <piece count="1">2_2</piece>
+            </sides>
+            <sides paths="Dominoes_0_6_s1.png,Dominoes_0_6_s2.png,Dominoes_0_6_s3.png,Dominoes_0_6_s4.png">
+              <piece count="1">0_6</piece>
+            </sides>
+            <sides paths="Dominoes_2_6_s1.png,Dominoes_2_6_s2.png,Dominoes_2_6_s3.png,Dominoes_2_6_s4.png">
+              <piece count="1">2_6</piece>
+            </sides>
+            <sides paths="Dominoes_1_4_s1.png,Dominoes_1_4_s2.png,Dominoes_1_4_s3.png,Dominoes_1_4_s4.png">
+              <piece count="1">1_4</piece>
+            </sides>
+            <sides paths="Dominoes_4_6_s1.png,Dominoes_4_6_s2.png,Dominoes_4_6_s3.png,Dominoes_4_6_s4.png">
+              <piece count="1">4_6</piece>
+            </sides>
+            <sides paths="Dominoes_3_4_s1.png,Dominoes_3_4_s2.png,Dominoes_3_4_s3.png,Dominoes_3_4_s4.png">
+              <piece count="1">3_4</piece>
+            </sides>
+            <sides paths="Dominoes_1_1_s1.png,Dominoes_1_1_s2.png,Dominoes_1_1_s3.png,Dominoes_1_1_s4.png">
+              <piece count="1">1_1</piece>
+            </sides>
+            <sides paths="Dominoes_6_6_s1.png,Dominoes_6_6_s2.png,Dominoes_6_6_s3.png,Dominoes_6_6_s4.png">
+              <piece count="1">6_6</piece>
+            </sides>
+            <sides paths="Dominoes_1_5_s1.png,Dominoes_1_5_s2.png,Dominoes_1_5_s3.png,Dominoes_1_5_s4.png">
+              <piece count="1">1_5</piece>
+            </sides>
+            <sides paths="Dominoes_0_3_s1.png,Dominoes_0_3_s2.png,Dominoes_0_3_s3.png,Dominoes_0_3_s4.png">
+              <piece count="1">0_3</piece>
+            </sides>
+            <sides paths="Dominoes_3_5_s1.png,Dominoes_3_5_s2.png,Dominoes_3_5_s3.png,Dominoes_3_5_s4.png">
+              <piece count="1">3_5</piece>
+            </sides>
+          </double_tap>
+        </quad_tap>
+      </single_tap>
+    </initial_side>
+  </initial_location>
 </game>
